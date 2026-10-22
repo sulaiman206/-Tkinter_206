@@ -19,4 +19,12 @@ subjects = [
 ]
 entries = []
 
+for i, subject in enumerate(subjects):
+    lbl = tk.Label(input_frame, text=f"Nilai {subject}:", anchor="w", width=18)
+    lbl.grid(row=i, column=0, sticky="w", pady=4, padx=5)
+    
+    entry = ttk.Entry(input_frame, width=22)
+    entry.grid(row=i, column=1, pady=4, padx=5)
+    entries.append(entry)
+
 root.mainloop()
