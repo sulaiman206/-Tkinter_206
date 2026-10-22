@@ -29,6 +29,9 @@ for i, subject in enumerate(subjects):
     entry.grid(row=i, column=1, pady=4, padx=5)
     entries.append(entry)
 
+prediksi_button = ttk.Button(root, text="Prediction Results")
+prediksi_button.pack(pady=15)
+
 hasil_label = tk.Label(root, text="Hasil Prediksi: -", font=("Arial", 12, "bold"))
 hasil_label.pack(pady=5)
 
