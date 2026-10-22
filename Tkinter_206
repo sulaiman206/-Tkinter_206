@@ -12,4 +12,10 @@ judul.pack(pady=15)
 input_frame = tk.Frame(root)
 input_frame.pack(pady=5)
 
+subjects = [
+    "Matematika", "Bahasa Indonesia", "Bahasa Inggris", 
+    "Algoritma", "Basis Data", "Pemrograman", 
+    "Jaringan Komputer", "Sistem Operasi", "Statistika", "Kewirausahaan"
+]
+
 root.mainloop()
