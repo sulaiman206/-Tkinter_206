@@ -2,7 +2,10 @@ import tkinter as tk
 from tkinter import ttk
 
 def hasil_prediksi():
-    pass
+    for entry in entries:
+        if entry.get() == "":
+            hasil_label.config(text="Semua nilai mata pelajaran harus diisi!")
+            return
 
 root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
